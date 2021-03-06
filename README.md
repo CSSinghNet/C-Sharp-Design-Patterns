@@ -6,7 +6,7 @@ Adaptation of <a href="https://github.com/kamranahmedse/design-patterns-for-huma
 ****
 
 <p align="center">
-ðŸŽ‰ Ultra-simplified explanation to design patterns! ðŸŽ‰
+🎉 Ultra-simplified explanation to design patterns! 🎉
 </p>
 <p align="center">
 A topic that can easily make anyone's mind wobble. Here I try to make them stick in to your mind (and maybe mine) by explaining them in the <i>simplest</i> way possible.
@@ -16,7 +16,7 @@ You can find full length examples for code snippets used in this article <a href
 </p>
 
 ****
-ðŸš€ Introduction
+🚀 Introduction
 =================
 
 Design patterns are solutions to recurring problems; **guidelines on how to tackle certain problems**. They are not classes, packages or libraries that you can plug into your application and wait for the magic to happen. These are, rather, guidelines on how to tackle certain problems in certain situations.
@@ -27,7 +27,7 @@ Wikipedia describes them as
 
 > In software engineering, a software design pattern is a general reusable solution to a commonly occurring problem within a given context in software design. It is not a finished design that can be transformed directly into source or machine code. It is a description or template for how to solve a problem that can be used in many different situations.
 
-âš ï¸ Be Careful
+⚠️ Be Careful
 -----------------
 - Design patterns are not a silver bullet to all your problems.
 - Do not try to force them; bad things are supposed to happen, if done so. Keep in mind that design patterns are solutions **to** problems, not solutions **finding** problems; so don't overthink.
@@ -58,7 +58,7 @@ Wikipedia says
  * [Prototype](#-prototype)
  * [Singleton](#-singleton)
 
-ðŸ  Simple Factory
+🏠 Simple Factory
 --------------
 Real world example
 > Consider, you are building a house and you need doors. It would be a mess if every time you need a door, you put on your carpenter clothes and start making a door in your house. Instead you get it made from a factory.
@@ -67,7 +67,7 @@ In plain words
 > Simple factory simply generates an instance for client without exposing any instantiation logic to the client
 
 Wikipedia says
-> In object-oriented programming (OOP), a factory is an object for creating other objects â€“ formally a factory is a function or method that returns objects of a varying prototype or class from some method call, which is assumed to be "new".
+> In object-oriented programming (OOP), a factory is an object for creating other objects – formally a factory is a function or method that returns objects of a varying prototype or class from some method call, which is assumed to be "new".
 
 **Programmatic Example**
 
@@ -121,7 +121,7 @@ Console.WriteLine($"Width of Door : {door.GetWidth()}");
 
 When creating an object is not just a few assignments and involves some logic, it makes sense to put it in a dedicated factory instead of repeating the same code everywhere.
 
-ðŸ­ Factory Method
+🏭 Factory Method
 --------------
 
 Real world example
@@ -131,7 +131,7 @@ In plain words
 > It provides a way to delegate the instantiation logic to child classes.
 
 Wikipedia says
-> In class-based programming, the factory method pattern is a creational pattern that uses factory methods to deal with the problem of creating objects without having to specify the exact class of the object that will be created. This is done by creating objects by calling a factory methodâ€”either specified in an interface and implemented by child classes, or implemented in a base class and optionally overridden by derived classesâ€”rather than by calling a constructor.
+> In class-based programming, the factory method pattern is a creational pattern that uses factory methods to deal with the problem of creating objects without having to specify the exact class of the object that will be created. This is done by creating objects by calling a factory method—either specified in an interface and implemented by child classes, or implemented in a base class and optionally overridden by derived classes—rather than by calling a constructor.
 
  **Programmatic Example**
 
@@ -209,7 +209,7 @@ marketingManager.TakeInterview();//Output : Asking about community building!
 
 Useful when there is some generic processing in a class but the required sub-class is dynamically decided at runtime. Or putting it in other words, when the client doesn't know what exact sub-class it might need.
 
-ðŸ”¨ Abstract Factory
+🔨 Abstract Factory
 ----------------
 
 Real world example
@@ -332,7 +332,7 @@ As you can see the wooden door factory has encapsulated the `carpenter` and the 
 
 When there are interrelated dependencies with not-that-simple creation logic involved
 
-ðŸ‘· Builder
+👷 Builder
 --------------------------------------------
 Real world example
 > Imagine you are at Hardee's and you order a specific deal, lets say, "Big Hardee" and they hand it over to you without *any questions*; this is the example of simple factory. But there are cases when the creation logic might involve more steps. For example you want a customized Subway deal, you have several options in how your burger is made e.g what bread do you want? what types of sauces would you like? What cheese would you want? etc. In such cases builder pattern comes to the rescue.
@@ -444,7 +444,7 @@ Console.WriteLine(burger.GetDescription());
 
 When there could be several flavors of an object and to avoid the constructor telescoping. The key difference from the factory pattern is that; factory pattern is to be used when the creation is a one step process while builder pattern is to be used when the creation is a multi step process.
 
-ðŸ‘ Prototype
+🐑 Prototype
 ------------
 Real world example
 > Remember dolly? The sheep that was cloned! Lets not get into the details but the key point here is that it is all about cloning
@@ -497,7 +497,7 @@ Console.WriteLine(original.Name); // Jolly
 
 When an object is required that is similar to existing object or when the creation would be expensive as compared to cloning.
 
-ðŸ’ Singleton
+💍 Singleton
 ------------
 Real world example
 > There can only be one president of a country at a time. The same president has to be brought to action, whenever duty calls. President here is singleton.
@@ -557,7 +557,7 @@ Wikipedia says
  * [Flyweight](#-flyweight)
  * [Proxy](#-proxy)
 
-ðŸ”Œ Adapter
+🔌 Adapter
 -------
 Real world example
 > Consider that you have some pictures in your memory card and you need to transfer them to your computer. In order to transfer them you need some kind of adapter that is compatible with your computer ports so that you can attach memory card to your computer. In this case card reader is an adapter.
@@ -644,7 +644,7 @@ var hunter = new Hunter();
 hunter.Hunt(wildDogAdapter);
 ```
 
-ðŸš¡ Bridge
+🚡 Bridge
 ------
 Real world example
 > Consider you have a website with different pages and you are supposed to allow the user to change the theme. What would you do? Create multiple copies of each of the pages for each of the themes or would you just create separate theme and load them based on the user's preferences? Bridge pattern allows you to do the second i.e.
@@ -741,7 +741,7 @@ Console.WriteLine(about.GetContent()); //Output: About page in Dark Black
 Console.WriteLine(careers.GetContent()); //Output: Careers page in Off White
 ```
 
-ðŸŒ¿ Composite
+🌿 Composite
 -----------------
 
 Real world example
@@ -865,7 +865,7 @@ Console.WriteLine($"Net Salary of Employees in Organization is {organization.Get
 //Ouptut: Net Salary of Employees in Organization is $10000.00
 ```
 
-â˜• Decorator
+☕ Decorator
 -------------
 
 Real world example
@@ -983,7 +983,7 @@ Console.WriteLine($"{vanillaCoffee.GetCost():c}"); // $ 8.00
 Console.WriteLine(vanillaCoffee.GetDescription()); // Simple Coffee, milk, whip, vanilla
 ```
 
-ðŸ“¦ Facade
+📦 Facade
 ----------------
 
 Real world example
@@ -1074,7 +1074,7 @@ computer.TurnOff();  // Bup bup buzzz! Haah! Zzzzz
 Console.ReadLine();
 ```
 
-ðŸƒ Flyweight
+🍃 Flyweight
 ---------
 
 Real world example
@@ -1156,7 +1156,7 @@ teaShop.Serve();
 // Serving tea to table# 5
 ```
 
-ðŸŽ± Proxy
+🎱 Proxy
 -------------------
 Real world example
 > Have you ever used an access card to go through a door? There are multiple options to open that door i.e. it can be opened either using access card or by pressing a button that bypasses the security. The door's main functionality is to open but there is a proxy added on top of it to add some functionality. Let me better explain it using the code example below.
@@ -1255,7 +1255,7 @@ Wikipedia says
 * [State](#-state)
 * [Template Method](#-template-method)
 
-ðŸ”— Chain of Responsibility
+🔗 Chain of Responsibility
 -----------------------
 
 Real world example
@@ -1354,7 +1354,7 @@ bank.Pay(259);
 // Paid 259 using Bitcoin!
 ```
 
-ðŸ‘® Command
+👮 Command
 -------
 
 Real world example
@@ -1472,7 +1472,7 @@ Finally let's see how we can use it in our client
 
 Command pattern can also be used to implement a transaction based system. Where you keep maintaining the history of commands as soon as you execute them. If the final command is successfully executed, all good otherwise just iterate through the history and keep executing the `undo` on all the executed commands.
 
-âž¿ Iterator
+➿ Iterator
 --------
 
 Real world example
@@ -1570,7 +1570,7 @@ Console.WriteLine(q.GetFrequecy());
 Console.ReadLine();
 ```
 
-ðŸ‘½ Mediator
+👽 Mediator
 ========
 
 Real world example
@@ -1642,7 +1642,7 @@ jane.Send("Hey!");
 //April 14, 20:05[Jane]:Hey!
 ```
 
-ðŸ’¾ Memento
+💾 Memento
 -------
 Real world example
 > Take the example of calculator (i.e. originator), where whenever you perform some calculation the last calculation is saved in memory (i.e. memento) so that you can get back to it and maybe get it restored using some action buttons (i.e. caretaker).
@@ -1744,7 +1744,7 @@ Console.Write(editor.Content); // This is the first sentence. This is second
 
 ```
 
-ðŸ˜Ž Observer
+😎 Observer
 --------
 Real world example
 > A good example would be the job seekers where they subscribe to some job posting site and they are notified whenever there is a matching job opportunity.   
@@ -1873,7 +1873,7 @@ jobPostings.AddJob(new JobPost("Software Engineer"));
 Console.ReadLine();
 ```
 
-ðŸƒ Visitor
+🏃 Visitor
 -------
 Real world example
 > Consider someone visiting Dubai. They just need a way (i.e. visa) to enter Dubai. After arrival, they can come and visit any place in Dubai on their own without having to ask for permission or to do some leg work in order to visit any place here; just let them know of a place and they can visit it. Visitor pattern lets you do just that, it helps you add places to visit so that they can visit as much as they can without having to do any legwork.
@@ -2014,7 +2014,7 @@ dolphin.Accept(jump);   // Walked on water a little and disappeared
 
 ```
 
-ðŸ’¡ Strategy
+💡 Strategy
 --------
 
 Real world example
@@ -2083,7 +2083,7 @@ sorter = new Sorter(new QuickSortStrategy());
 sorter.Sort(unSortedList); // // Output : Sorting using Quick Sort !
 ```
 
-ðŸ’¢ State
+💢 State
 -----
 Real world example
 > Imagine you are using some drawing application, you choose the paint brush to draw. Now the brush changes its behavior based on the selected color i.e. if you have chosen red color it will draw in red, if blue then it will be in blue etc.  
@@ -2179,7 +2179,7 @@ editor.Type("Fifthe Line");
 // fifth line
 ```
 
-ðŸ“’ Template Method
+📒 Template Method
 ---------------
 
 Real world example
@@ -2294,11 +2294,11 @@ iosBuilder.Build();
 // Deploying ios build to server
 ```
 
-## ðŸš¦ Wrap Up Folks
+## 🚦 Wrap Up Folks
 
 And that about wraps it up. I will continue to improve this, so you might want to watch/star this repository to revisit. Also, I have plans on writing the same about the architectural patterns, stay tuned for it.
 
-## ðŸ‘¬ Contribution
+## 👬 Contribution
 
 - Report issues
 - Open pull request with improvements
